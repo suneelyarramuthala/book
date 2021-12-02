@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <Head>
+         <title>book shop</title>
+         <link rel="stylesheet" type="text/css" href="login.css"> 
+        <script src="js/login.js"></script>
+         <style>
+             
+body {
+  font-size: 28px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+</style>
+         
+    </Head>
+    <Body>
+        <ul class="active">
+            <li><a  href="index.html">Home</a></li>
+            <li><a href="book.html">books</a></li>
+            <li><a href="cart.html">cart</a></li>
+          </ul>
+          <h2>Login Page</h2><br>    
+    <div class="login">    
+        <form action="action_page.php" method="post">
+            <div class="imgcontainer">
+              <img src="img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+          
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input type="text" placeholder="Enter Username" name="uname" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+              </label>
+            </div>
+          
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+</div>    
+
+    </Body>
+</html>
